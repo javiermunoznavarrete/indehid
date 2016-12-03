@@ -1,9 +1,4 @@
-<%if user_signed_in?%>
-    <%= link_to "Salir", destroy_user_session_path,  method: :delete %>
-<%else%>
-    <%= link_to "Ingresar", new_user_registration_path %>
-    <%= link_to "Registrar", new_user_registration_path %>
-<%end%>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Users</h1>
