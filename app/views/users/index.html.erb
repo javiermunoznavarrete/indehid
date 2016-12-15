@@ -3,8 +3,8 @@
 
 <h1>Users</h1>
 
-<table>
-  <thead>
+<table class="table">
+    <thead>
     <tr>
       <th>Name ||</th>
       <th>Email ||</th>
@@ -29,14 +29,33 @@
         <td><%= user.commune %></td>
         <td><%= user.country %></td>
         <td><%= user.role %></td>
-        <td><%= link_to 'Show ||', user %></td>
-        <td><%= link_to 'Edit ||', edit_user_path(user) %></td>
-        <td ><div class="btn-group btn-group-xs" role="group"><%= link_to 'Destroy ||', user, method: :delete, data: { confirm: 'Are you sure?' } %></div></td>
+        <td>
+          <div class="btn-group btn-group-xs" role="group">
+            <%= link_to 'Show', user, class: 'btn btn-default' %>
+          </div>
+        </td>
+        <td>
+          <div class="btn-group btn-group-xs" role="group">
+          <%= link_to 'Edit', user, class: 'btn btn-default' %>
+            <button type="button" class="btn btn-default"><%= link_to 'Edit', edit_user_path(user) %>||</button>
+          </div>
+        </td>
+        <td >
+          <div class="btn-group btn-group-xs" role="group">
+            <button type="button" class="btn btn-danger"><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>||</button>
+          </div>
+        </td>
       </tr>
     <% end %>
   </tbody>
-</table>
-
+  </table>
+<%= current_user.name %>
 <br>
-
 <%= link_to 'New User', new_user_path %>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+
+  <!-- Table -->
+  
+</div>
