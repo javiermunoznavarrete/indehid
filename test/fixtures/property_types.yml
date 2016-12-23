@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  minero: MyString
+  DerechosDeAgua: MyString
+  forestal: MyString
+  t_urbano: MyString
+  t_agricola: MyString
+  C_propiedades: MyString
+
+two:
+  minero: MyString
+  DerechosDeAgua: MyString
+  forestal: MyString
+  t_urbano: MyString
+  t_agricola: MyString
+  C_propiedades: MyString

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/among_us'
+
   get 'pages/index'
 
   devise_for :users
