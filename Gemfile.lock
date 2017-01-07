@@ -56,8 +56,6 @@ GEM
       execjs
     coffee-script-source (1.11.1)
     concurrent-ruby (1.0.2)
-    contact_us (1.2.0)
-      rails (>= 4.2.0)
     debug_inspector (0.0.2)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -180,7 +178,6 @@ DEPENDENCIES
   byebug
   carrierwave
   coffee-rails (~> 4.2)
-  contact_us
   devise
   jbuilder (~> 2.5)
   jquery-rails
