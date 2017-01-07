@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @property.user %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= @property.imagen %>
+</p>
+
+<p>
+  <strong>Rol:</strong>
+  <%= @property.rol %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @property.direccion %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @property.valor %>
+</p>
+
+<p>
+  <strong>Porcentaje de venta:</strong>
+  <%= @property.porcentaje_de_venta %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @property.descripcion %>
+</p>
+
+<p>
+  <strong>Locacion:</strong>
+  <%= @property.locacion %>
+</p>
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>

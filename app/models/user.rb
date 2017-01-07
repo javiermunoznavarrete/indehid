@@ -6,4 +6,5 @@ class User < ApplicationRecord
 		enum role: [:client, :corredor_in, :corredor_out, :admin]
   validates :address, :city, :phone, :commune, :country, presence: true
   mount_uploader :photo, PhotoUploader
+  has_many :propery
 end

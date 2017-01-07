@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  imagen: MyString
+  rol: 1
+  direccion: MyString
+  valor: 1
+  porcentaje_de_venta: MyString
+  descripcion: MyString
+  locacion: MyString
+
+two:
+  user: two
+  imagen: MyString
+  rol: 1
+  direccion: MyString
+  valor: 1
+  porcentaje_de_venta: MyString
+  descripcion: MyString
+  locacion: MyString

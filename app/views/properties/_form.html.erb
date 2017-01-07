@@ -1,0 +1,53 @@
+<%= form_for(property) do |f| %>
+  <% if property.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(property.errors.count, "error") %> prohibited this property from being saved:</h2>
+
+      <ul>
+      <% property.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rol %>
+    <%= f.number_field :rol %>
+  </div>
+
+  <div class="field">
+    <%= f.label :direccion %>
+    <%= f.text_field :direccion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :valor %>
+    <%= f.number_field :valor %>
+  </div>
+
+  <div class="field">
+    <%= f.label :porcentaje_de_venta %>
+    <%= f.text_field :porcentaje_de_venta %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :locacion %>
+    <%= f.text_field :locacion %>
+  </div>
+
+  <label>fotos de la propiedad</label>
+    <%= f.file_field :imagen %>
+    <%= f.hidden_field :imagen_cache %>
+    <%= image_tag(@property.imagen, class:"img-responsive") if @property.imagen? %>
+  </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

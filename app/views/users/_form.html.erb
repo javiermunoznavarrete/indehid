@@ -10,57 +10,59 @@
       </ul>
     </div>
   <% end %>
-<div class="input-group">
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: "form-control" %>
-  </div>
+<div class="container">
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email, class: "form-control" %>
-  </div>
+  <div class="input-group col-md-6 col-md-offset-3">
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :address %>
-    <%= f.text_field :address, class: "form-control" %>
-  </div>
+    <div class="field">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :city %>
-    <%= f.text_field :city, class: "form-control" %>
-  </div>
+    <div class="field">
+      <%= f.label :address %>
+      <%= f.text_field :address, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :phone %>
-    <%= f.text_field :phone, class: "form-control" %>
-  </div>
+    <div class="field">
+      <%= f.label :city %>
+      <%= f.text_field :city, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :commune %>
-    <%= f.text_field :commune, class: "form-control" %>
-  </div>
+    <div class="field">
+      <%= f.label :phone %>
+      <%= f.text_field :phone, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :country %>
-    <%= f.text_field :country, class: "form-control" %>
-  </div>
+    <div class="field">
+      <%= f.label :commune %>
+      <%= f.text_field :commune, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= f.label :role %>
-    <%= f.number_field :role, class: "form-control" %>
-  </div>
-  <p>
-    <label>My Avatar</label>
-    <%= f.file_field :photo %>
-    <%= f.hidden_field :photo_cache %>
-    <%= image_tag(@user.photo.thumb, class:"img-responsive") if @user.photo? %>
-  </p>
+    <div class="field">
+      <%= f.label :country %>
+      <%= f.text_field :country, class: "form-control" %>
+    </div>
 
-  <div class="actions btn btn-default">
-    <%= f.submit %>
-  </div>
+    <div class="field">
+      <%= f.label :role %>
+      <%= f.number_field :role, class: "form-control" %>
+    </div>
+    <p>
+      <label>My Avatar</label>
+      <%= f.file_field :photo %>
+      <%= f.hidden_field :photo_cache %>
+      <%= image_tag(@user.photo.thumb, class:"img-responsive") if @user.photo? %>
+    </p>
 
+    <div class="actions btn btn-default">
+      <%= f.submit %>
+    </div>
 
 </div>
+  </div>
   <% end %>

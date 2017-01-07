@@ -8,27 +8,15 @@
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="item active">
-                        <%=image_tag("casa1.jpg", alt: "First slide")%>
+                    <% @u3_img.each_with_index do |property, i| %>
+                    <div class="item <%= "active" if i == 0 %>" >
+                        <%= image_tag property.imagen %> 
                         <div class="carousel-caption">
                             <h3>First slide</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
                     </div>
-                    <div class="item">
-                   <%=image_tag("casa2.jpg", alt: "Second slide")%>
-                        <div class="carousel-caption">
-                            <h3>Second slide</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <%=image_tag("casa3.jpg", alt: "Third slide")%>
-                        <div class="carousel-caption">
-                            <h3>Third slide</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </div>
-                    </div>
+                    <% end %>
                 </div>
                 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -98,6 +86,7 @@
 	  </div>
 	</div>
 </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
