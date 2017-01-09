@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'mailer/contact'
+
   resources :properties
   get 'pages/among_us'
 
