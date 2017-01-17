@@ -24,3 +24,14 @@ p {
 .with-a {
 	color: #6699ff;
 }
+.navbar-toggle {
+	border-bottom-color: black;
+	border: black;
+}
+.formcontact {
+	border: 1px;
+	border-color: black;
+}
+.iconbar {
+	background-color: black;
+}

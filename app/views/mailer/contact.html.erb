@@ -1,2 +1,15 @@
-<h1>Mailer#contact</h1>
-<p>Find me in app/views/mailer/contact.html.erb</p>
+<div class="container">
+	<div class="jumbotron">
+		<form action="<%= mailer_sendmail_path %>" method="get" accept-charset="utf-8">
+			<h2>Contactanos</h2>
+			 <p>Email</p>
+			 <input type="email" placeholder="email">
+			 <p>mensaje</p>
+			 <div style="display: block;">
+				 <textarea rows="4" cols="50">
+				 </textarea> 
+			</div>
+			<button class="btn btn-info" type="submit">enviar</button>
+		</form>
+	</div>
+</div>
