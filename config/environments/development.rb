@@ -57,11 +57,13 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default :charset => "utf-8"
   ActionMailer::Base.smtp_settings = {
-    :address => "mail.indehid.com ",
+    :address => "mail.indehid.com",
     :port => 465,
     :authentication => :plain,
-    :domain => 'indehid.com',
-    :user_name => ENV['email'],
+    :domain => 'mail.indehid.com',
+    :user_name => ENV['email_user'],
     :password => ENV['email_password'],
+    ssl: true,
+    :openssl_verify_mode => 'none'
   }
 end
