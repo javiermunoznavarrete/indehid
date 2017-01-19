@@ -21,7 +21,7 @@
     <% @properties.each do |property| %>
       <tr>
         <td><%= property.user %></td>
-        <td><%= image_tag(property.imagen) %></td>
+        <td><%= image_tag(property.imagen, class: 'img-responsive') %></td>
         <td><%= property.rol %></td>
         <td><%= property.direccion %></td>
         <td><%= property.valor %></td>

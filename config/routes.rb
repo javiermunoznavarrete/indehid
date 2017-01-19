@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :properties
   get 'pages/among_us'
+  get 'pages/contact_mail'
 
   get 'pages/index'
 

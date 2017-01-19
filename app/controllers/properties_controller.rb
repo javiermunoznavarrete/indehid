@@ -1,6 +1,8 @@
 class PropertiesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_property, only: [:show, :edit, :update, :destroy]
+  before_action :check_role 
+
 
   # GET /properties
   # GET /properties.json
@@ -62,6 +64,12 @@ class PropertiesController < ApplicationController
     end
   end
 
+  def check_role
+    if user_signed_in? and current_user.role == "client"
+      redirect_to pages_index_url, alert: "no tiene permisos para esto"
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_property
@@ -72,4 +80,5 @@ class PropertiesController < ApplicationController
     def property_params
       params.require(:property).permit(:user_id, :imagen, :rol, :direccion, :valor, :porcentaje_de_venta, :descripcion, :locacion)
     end
+
 end

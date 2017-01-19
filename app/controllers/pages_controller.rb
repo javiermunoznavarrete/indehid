@@ -7,4 +7,9 @@ class PagesController < ApplicationController
   def among_us
   	
   end
+
+  def contact_mailer
+  	 render mailer_contact_url 
+  end
+
 end

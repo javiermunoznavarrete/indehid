@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :check_role
+  
 
   # GET /users
   # GET /users.json
@@ -61,6 +63,11 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+  def check_role
+    if user_signed_in? and current_user.role != "admin"
+      redirect_to pages_index_url, alert: "no tiene permisos para esto"
     end
   end
 
