@@ -24,3 +24,6 @@ p {
 .with-a {
 	color: #6699ff;
 }
+textarea {
+	resize:none;
+}
