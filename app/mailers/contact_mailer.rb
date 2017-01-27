@@ -1,5 +1,6 @@
 class ContactMailer < ApplicationMailer
 
+<<<<<<< HEAD
 	def contactmensaje(email_of_user, content)
 		@email_of_user = email_of_user
 		@content = content
@@ -10,3 +11,4 @@ class ContactMailer < ApplicationMailer
 	end
  
 end
+
