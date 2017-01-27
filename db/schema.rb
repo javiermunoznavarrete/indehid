@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161223010147) do
+ActiveRecord::Schema.define(version: 20170126235707) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20161223010147) do
     t.string   "locacion"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
+    t.boolean  "aproved"
     t.index ["user_id"], name: "index_properties_on_user_id", using: :btree
   end
 
