@@ -1,0 +1,56 @@
+.users_table {
+	border: 10px;
+	border-color: black;
+}
+.row {
+	margin: 0px
+}
+.my-brand {
+	margin-top: -13px
+}
+.main {
+	margin-top: 60px
+}
+.my-nav {
+	background-color: #ffffff
+}
+body {
+	background-color: #fff;
+
+}
+p {
+	color: #6699ff;
+}
+.with-a {
+	color: #6699ff;
+}
+textarea {
+	resize:none;
+
+.navbar-toggle {
+	border-bottom-color: black;
+	border: black;
+}
+.formcontact {
+	border: 1px;
+	border-color: black;
+}
+.iconbar {
+	background-color: black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
