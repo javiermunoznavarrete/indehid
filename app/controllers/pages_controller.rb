@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :among_us]
+  before_action :authenticate_user!, except: [:index, :among_us, :proerty]
   def index
   	@u3_img = Property.where("aproved = true").last(3)
   end
@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   end
 
   def contact_mailer
+
+  end
+  def proerty
 
   end
 
